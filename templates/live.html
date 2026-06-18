@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+<!--{% load static %}-->
+
+{% block title %}
+Live Communication
+{% endblock %}
+
+{% block content %}
+
+<section class="live-page">
+
+    <div class="live-card">
+        <h1>
+            DIVER COMMUNICATION SYSTEM
+        </h1>
+
+        <div class="current-time">
+            Current Time:
+            <span id="clock">
+                --:--:--
+            </span>
+        </div>
+
+        <div class="divider"></div>
+
+        <h2>
+            LATEST MESSAGE
+        </h2>
+
+        <div id="latest-message">
+            WAITING...
+        </div>
+
+        <div class="received-time">
+            Received At:
+            <span id="received-time">
+                14:25:29
+            </span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="status">
+            Status:
+            <span id="connection-status" class="connected">
+                Connected
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+{% block js %}
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}
+
+
+{% endblock %}
+
